@@ -10,7 +10,7 @@ $body-color: hsl(206, 4%, 97%);
 $container-color: #fff;
 
 // Font and Typography
-// $body-font: 
+$body-font: 'Lato', sans-serif;
 $biggest-font-size: 2.25rem;
 $h1-font-size: 1.5rem;
 $h2-font-size: 1.25rem;
@@ -26,16 +26,9 @@ $font-bold: 700;
 $z-tooltip: 10;
 $z-fixed: 100;
 
+// Header Height
+$header-height: 3.5rem;
 
-@media screen and (min-width: 968px) {
-    $biggest-font-size: 3.5rem;
-    $h1-font-size: 2.25rem;
-    $h2-font-size: 1.5rem;
-    $h3-font-size: 1.25rem;
-    $normal-font-size: 1rem;
-    $small-font-size: .875rem;
-    $smaller-font-size: .813rem;
-}
 
 
 

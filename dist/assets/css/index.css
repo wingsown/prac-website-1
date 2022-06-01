@@ -1,28 +1,147 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Lato:wght@400;700&display=swap");
 /* Reset Styles */
 * {
-  color: inherit;
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: Poppins;
+  font-family: "Lato", sans-serif;
+  font-size: 0.938rem;
+  background-color: hsl(206deg, 4%, 97%);
+  color: hsl(206deg, 4%, 42%);
+}
+
+h1, h2, h3 {
+  color: hsl(206deg, 12%, 12%);
+  font-weight: 700;
+}
+
+h1, h2, h3, p {
+  line-height: 140%;
 }
 
 ul {
-  padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 a {
   text-decoration: none;
 }
 
-hr {
-  border: 0;
-  border-top: 1px dotted #efefef;
-}
-
 img {
   max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1024px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding: 4.5rem 0 2rem;
+}
+.section__title {
+  position: relative;
+  font-size: 1.5rem;
+  padding-left: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+.section__title::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 3px;
+  height: 20px;
+  background-color: hsl(36deg, 72%, 48%);
+}
+
+.siteHeader {
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.siteHeader__nav {
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.siteHeader__navLogo, .siteHeader__navToggle {
+  color: #fff;
+}
+.siteHeader__navLogo {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-weight: 700;
+}
+.siteHeader__navLogoImg {
+  width: 0.75rem;
+}
+.siteHeader__navToggle {
+  display: inline-flex;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .siteHeader__navMenu {
+    position: fixed;
+    background-color: hsl(206deg, 12%, 12%);
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+  }
+}
+.siteHeader__navList {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 3rem;
+  padding-top: 9rem;
+}
+.siteHeader__navItemLink {
+  text-transform: uppercase;
+  color: hsl(206deg, 4%, 75%);
+  font-size: 1.25rem;
+  transition: 0.3s;
+}
+.siteHeader__navItemLink:hover {
+  color: #fff;
+}
+.siteHeader__navClose {
+  font-size: 2rem;
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.show-menu {
+  right: 0;
 }
