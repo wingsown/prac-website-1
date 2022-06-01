@@ -77,7 +77,7 @@ button {
 
 .siteHeader {
   width: 100%;
-  background-color: #000;
+  background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
@@ -144,4 +144,64 @@ button {
 
 .show-menu {
   right: 0;
+}
+
+.sec01 {
+  gap: 0;
+}
+.sec01__container {
+  padding: 7rem 0 2.5rem;
+  background: linear-gradient(160deg, hsl(206deg, 5%, 24%) -4%, hsl(206deg, 12%, 12%) 46%);
+}
+.sec01__content {
+  position: relative;
+}
+.sec01__title, .sec01__data-title {
+  color: #fff;
+}
+.sec01__title {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+.sec01__title span {
+  color: hsl(36deg, 72%, 48%);
+}
+.sec01__description {
+  margin-bottom: 2rem;
+}
+.sec01__data {
+  border-top: 1px solid hsl(206deg, 4%, 42%);
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+}
+.sec01__data-number {
+  color: hsl(36deg, 72%, 48%);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.sec01__data-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.sec01__scroll {
+  position: absolute;
+  width: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation: scroll 3s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
