@@ -1,0 +1,13 @@
+@mixin button($bgc: $black-color) {
+    display: inline-block;
+    background-color: $bgc;
+    color: #fff;
+    padding: 1rem 1.75rem;
+    border-radius: .25rem;
+    font-size: $normal-font-size;
+    text-transform: uppercase;
+}
+
+.button {
+    @include button;
+}

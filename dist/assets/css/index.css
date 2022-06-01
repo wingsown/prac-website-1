@@ -75,6 +75,16 @@ button {
   background-color: hsl(36deg, 72%, 48%);
 }
 
+.button {
+  display: inline-block;
+  background-color: hsl(206deg, 12%, 12%);
+  color: #fff;
+  padding: 1rem 1.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.938rem;
+  text-transform: uppercase;
+}
+
 .siteHeader {
   width: 100%;
   background-color: transparent;
@@ -146,6 +156,21 @@ button {
   right: 0;
 }
 
+.scroll-header {
+  background-color: hsl(206deg, 4%, 97%);
+  box-shadow: 0 1px 4px hsla(0deg, 4%, 15%, 0.1);
+  transition: all 0.3s linear;
+}
+
+.scroll-header .siteHeader__navLogo,
+.scroll-header .siteHeader__navToggle {
+  color: hsl(206deg, 12%, 12%);
+}
+
+.scroll-header .siteHeader__navLogoImg {
+  mix-blend-mode: difference;
+}
+
 .sec01 {
   gap: 0;
 }
@@ -204,4 +229,36 @@ button {
   100% {
     transform: translateY(0);
   }
+}
+.sec02__button {
+  display: inline-block;
+  background-color: hsl(206deg, 12%, 12%);
+  color: #fff;
+  padding: 1rem 1.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.938rem;
+  text-transform: uppercase;
+  margin-left: 1.25rem;
+}
+.sec02__category {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 200px;
+  justify-content: center;
+  row-gap: 2.5rem;
+}
+.sec02__img {
+  width: 60px;
+  margin-bottom: 1rem;
+  transition: 0.4s;
+}
+.sec02__group {
+  text-align: center;
+}
+.sec02__group:hover .sec02__img {
+  transform: translateY(-0.25rem);
+}
+.sec02__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
 }

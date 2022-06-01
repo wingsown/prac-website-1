@@ -82,3 +82,19 @@
     right: 0;
 }
 
+// Change BG header
+.scroll-header {
+    background-color: $body-color;
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
+    transition: all .3s linear;
+}
+
+.scroll-header .siteHeader__navLogo,
+.scroll-header .siteHeader__navToggle {
+    color: $title-color;
+}
+
+.scroll-header .siteHeader__navLogoImg {
+    mix-blend-mode: difference;
+}
+
