@@ -33,3 +33,26 @@ function scrollHeader() {
 }
 
 window.addEventListener('scroll', scrollHeader);
+
+/*================ MIXITUP FILTER ================ */
+let mixer = mixitup('.sec03__content', {
+    selectors: {
+        target: '.sec03__card'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+// Default filter product
+mixer.filter('.delicacies');
+
+// Link active products
+const linkProducts = document.querySelectorAll('.sec03__item');
+
+function activeProducts() {
+    linkProducts.forEach(l => l.classList.remove('active-product'))
+    this.classList.add('active-product')
+} 
+
+linkProducts.forEach(l => l.addEventListener('click', activeProducts));

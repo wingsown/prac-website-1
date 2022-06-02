@@ -262,3 +262,81 @@ button {
   font-size: 1.25rem;
   margin-bottom: 0.25rem;
 }
+
+.sec03__filters {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 2rem;
+  margin-bottom: 3.5rem;
+}
+.sec03__line {
+  position: relative;
+}
+.sec03__line::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  background-color: hsl(206deg, 4%, 75%);
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.sec03__item {
+  cursor: pointer;
+}
+.sec03__title {
+  font-size: 1rem;
+  color: hsl(206deg, 4%, 42%);
+  margin-bottom: 0.5rem;
+}
+.sec03__stock {
+  font-size: 0.813rem;
+}
+.sec03__content {
+  grid-template-columns: 200px;
+  justify-content: center;
+}
+.sec03__card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+.sec03__card:hover .sec03__img {
+  transform: translateY(-0.25rem);
+}
+.sec03__img {
+  width: 150px;
+  transition: 0.4s;
+}
+.sec03__shape {
+  background-color: hsl(0deg, 0%, 90%);
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-align: center;
+  padding: 0.25rem 0;
+}
+.sec03__data {
+  padding: 1rem 0 1.25rem 1rem;
+  position: relative;
+}
+.sec03__price {
+  font-size: 1.25rem;
+}
+.sec03__name {
+  font-size: 0.938rem;
+}
+.sec03__button {
+  border-radius: 50%;
+  padding: 0.625rem;
+  display: inline-flex;
+  font-size: 1.25rem;
+  position: absolute;
+  right: 1rem;
+  top: -1.25rem;
+  box-shadow: 0 4px 12px hsla(206deg, 4%, 4%, 0.2);
+}
+
+.active-product .sec03__title {
+  color: hsl(206deg, 12%, 12%);
+  transition: 0.3s;
+}
