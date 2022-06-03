@@ -402,3 +402,24 @@ button {
 .sec04__button:hover i {
   transform: translateX(0.25rem);
 }
+
+.sec05 {
+  background-color: #fff;
+}
+.sec05__container {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 2.5rem 2rem;
+  border-top: 1px solid hsl(206deg, 4%, 75%);
+  padding-top: 2.5rem;
+}
+.sec05__img {
+  width: 80px;
+  mix-blend-mode: luminosity;
+  opacity: 0.4;
+  transition: 0.4s;
+}
+.sec05__img:hover {
+  opacity: 0.8;
+}
