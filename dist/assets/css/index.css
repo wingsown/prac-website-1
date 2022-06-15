@@ -423,3 +423,58 @@ button {
 .sec05__img:hover {
   opacity: 0.8;
 }
+
+.sec06__container {
+  padding-bottom: 2rem;
+}
+.sec06__content {
+  row-gap: 3rem;
+}
+.sec06__image {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.sec06__img {
+  border-radius: 0.5rem;
+}
+.sec06__button {
+  display: inline-flex;
+  background-color: #fff;
+  padding: 1.15rem;
+  border-radius: 0.5rem 0 0.5rem 0;
+  font-size: 2rem;
+  color: hsl(206deg, 12%, 12%);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.sec06__button i {
+  transform: rotate(-30deg);
+  transition: 0.4s;
+}
+.sec06__button i:hover {
+  transform: rotate(-30deg) translateX(0.25rem);
+}
+.sec06__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+.sec06__description {
+  margin-bottom: 1.5rem;
+}
+.sec06__footer, .sec06__reaction {
+  display: flex;
+  align-items: center;
+}
+.sec06__footer {
+  column-gap: 1.5rem;
+}
+.sec06__reaction {
+  column-gap: 0.25rem;
+}
+.sec06__reaction i {
+  font-size: 1.25rem;
+}
+.sec06__reaction span {
+  font-size: 0.813rem;
+}
